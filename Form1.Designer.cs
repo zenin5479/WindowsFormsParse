@@ -42,7 +42,7 @@
          // LabelMilliseconds
          // 
          LabelMilliseconds.AutoSize = true;
-         LabelMilliseconds.Location = new System.Drawing.Point(12, 143);
+         LabelMilliseconds.Location = new System.Drawing.Point(12, 118);
          LabelMilliseconds.Name = "LabelMilliseconds";
          LabelMilliseconds.Size = new System.Drawing.Size(104, 21);
          LabelMilliseconds.TabIndex = 56;
@@ -51,7 +51,7 @@
          // LabelCalls
          // 
          LabelCalls.AutoSize = true;
-         LabelCalls.Location = new System.Drawing.Point(256, 143);
+         LabelCalls.Location = new System.Drawing.Point(256, 118);
          LabelCalls.Name = "LabelCalls";
          LabelCalls.Size = new System.Drawing.Size(72, 21);
          LabelCalls.TabIndex = 55;
@@ -68,7 +68,7 @@
          // LabelSpent
          // 
          LabelSpent.AutoSize = true;
-         LabelSpent.Location = new System.Drawing.Point(122, 143);
+         LabelSpent.Location = new System.Drawing.Point(122, 118);
          LabelSpent.Name = "LabelSpent";
          LabelSpent.Size = new System.Drawing.Size(128, 21);
          LabelSpent.TabIndex = 53;
@@ -85,7 +85,7 @@
          // LabelAverage
          // 
          LabelAverage.AutoSize = true;
-         LabelAverage.Location = new System.Drawing.Point(12, 122);
+         LabelAverage.Location = new System.Drawing.Point(12, 97);
          LabelAverage.Name = "LabelAverage";
          LabelAverage.Size = new System.Drawing.Size(336, 21);
          LabelAverage.TabIndex = 51;
@@ -115,7 +115,7 @@
          // 
          // RichTextBoxOne
          // 
-         RichTextBoxOne.Location = new System.Drawing.Point(12, 187);
+         RichTextBoxOne.Location = new System.Drawing.Point(12, 142);
          RichTextBoxOne.Name = "RichTextBoxOne";
          RichTextBoxOne.Size = new System.Drawing.Size(338, 323);
          RichTextBoxOne.TabIndex = 59;
@@ -124,7 +124,7 @@
          // Form1
          // 
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-         ClientSize = new System.Drawing.Size(362, 522);
+         ClientSize = new System.Drawing.Size(362, 477);
          Controls.Add(RichTextBoxOne);
          Controls.Add(ButtonParseTwo);
          Controls.Add(ButtonParseOne);
