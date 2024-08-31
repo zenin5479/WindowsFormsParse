@@ -99,6 +99,7 @@
          ButtonParseOne.TabIndex = 57;
          ButtonParseOne.Text = "Парсить";
          ButtonParseOne.UseVisualStyleBackColor = true;
+         ButtonParseOne.Click += ButtonParseOne_Click;
          // 
          // ButtonParseTwo
          // 
@@ -109,6 +110,7 @@
          ButtonParseTwo.TabIndex = 58;
          ButtonParseTwo.Text = "Парсить";
          ButtonParseTwo.UseVisualStyleBackColor = true;
+         ButtonParseTwo.Click += ButtonParseTwo_Click;
          // 
          // Form1
          // 

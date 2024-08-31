@@ -14,5 +14,15 @@ namespace WindowsFormsParse
       {
 
       }
+
+      private void ButtonParseOne_Click(object sender, EventArgs e)
+      {
+
+      }
+
+      private void ButtonParseTwo_Click(object sender, EventArgs e)
+      {
+
+      }
    }
 }
