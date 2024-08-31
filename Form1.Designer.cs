@@ -36,6 +36,7 @@
          LabelAverage = new System.Windows.Forms.Label();
          ButtonParseOne = new System.Windows.Forms.Button();
          ButtonParseTwo = new System.Windows.Forms.Button();
+         RichTextBoxOne = new System.Windows.Forms.RichTextBox();
          SuspendLayout();
          // 
          // LabelMilliseconds
@@ -112,10 +113,19 @@
          ButtonParseTwo.UseVisualStyleBackColor = true;
          ButtonParseTwo.Click += ButtonParseTwo_Click;
          // 
+         // RichTextBoxOne
+         // 
+         RichTextBoxOne.Location = new System.Drawing.Point(12, 187);
+         RichTextBoxOne.Name = "RichTextBoxOne";
+         RichTextBoxOne.Size = new System.Drawing.Size(557, 323);
+         RichTextBoxOne.TabIndex = 59;
+         RichTextBoxOne.Text = "";
+         // 
          // Form1
          // 
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
          ClientSize = new System.Drawing.Size(744, 522);
+         Controls.Add(RichTextBoxOne);
          Controls.Add(ButtonParseTwo);
          Controls.Add(ButtonParseOne);
          Controls.Add(LabelMilliseconds);
@@ -142,5 +152,6 @@
       private System.Windows.Forms.Label LabelAverage;
       private System.Windows.Forms.Button ButtonParseOne;
       private System.Windows.Forms.Button ButtonParseTwo;
+      private System.Windows.Forms.RichTextBox RichTextBoxOne;
    }
 }
