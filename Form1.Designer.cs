@@ -117,14 +117,14 @@
          // 
          RichTextBoxOne.Location = new System.Drawing.Point(12, 187);
          RichTextBoxOne.Name = "RichTextBoxOne";
-         RichTextBoxOne.Size = new System.Drawing.Size(557, 323);
+         RichTextBoxOne.Size = new System.Drawing.Size(1009, 323);
          RichTextBoxOne.TabIndex = 59;
          RichTextBoxOne.Text = "";
          // 
          // Form1
          // 
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-         ClientSize = new System.Drawing.Size(744, 522);
+         ClientSize = new System.Drawing.Size(1033, 522);
          Controls.Add(RichTextBoxOne);
          Controls.Add(ButtonParseTwo);
          Controls.Add(ButtonParseOne);
