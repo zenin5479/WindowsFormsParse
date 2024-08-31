@@ -117,14 +117,14 @@
          // 
          RichTextBoxOne.Location = new System.Drawing.Point(12, 187);
          RichTextBoxOne.Name = "RichTextBoxOne";
-         RichTextBoxOne.Size = new System.Drawing.Size(1009, 323);
+         RichTextBoxOne.Size = new System.Drawing.Size(338, 323);
          RichTextBoxOne.TabIndex = 59;
          RichTextBoxOne.Text = "";
          // 
          // Form1
          // 
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-         ClientSize = new System.Drawing.Size(1033, 522);
+         ClientSize = new System.Drawing.Size(362, 522);
          Controls.Add(RichTextBoxOne);
          Controls.Add(ButtonParseTwo);
          Controls.Add(ButtonParseOne);
@@ -136,6 +136,7 @@
          Controls.Add(LabelAverage);
          Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
          Name = "Form1";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Парсинг";
          Load += Form1_Load;
          ResumeLayout(false);
