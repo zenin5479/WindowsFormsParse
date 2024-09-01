@@ -18,7 +18,6 @@ namespace WindowsFormsParse
       private void ButtonParseOne_Click(object sender, EventArgs e)
       {
          int a = int.Parse(TextBoxOne.Text);
-
          int i = Convert.ToInt32(TextBoxOne.Text);
 
 
@@ -33,7 +32,10 @@ namespace WindowsFormsParse
 
       private void ButtonParseTwo_Click(object sender, EventArgs e)
       {
+         int outputvalue;
 
+         bool isNumber = int.TryParse(TextBoxOne.Text, out outputvalue);
+         RichTextBoxOne.AppendText(isNumber.ToString() + outputvalue);
       }
    }
 }
