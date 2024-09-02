@@ -24,24 +24,27 @@ namespace WindowsFormsParse
          else
             RichTextBoxOne.AppendText("Преобразование завершилось неудачей" + Environment.NewLine);
 
-         //bool result2 = int.Parse(TextBoxOne.Text, out int anumber);
+
          int b = int.Parse(TextBoxOne.Text);
          RichTextBoxOne.AppendText("Метод int.Parse" + Environment.NewLine);
-         if (result2)
-            RichTextBoxOne.AppendText("Преобразование прошло успешно. Выходное значение: " + number + Environment.NewLine);
+         if (b != 0)
+         {
+            RichTextBoxOne.AppendText("Преобразование прошло успешно. Выходное значение: " + b + Environment.NewLine);
+            RichTextBoxOne.AppendText("Текущий тип локальной переменной: " + b.GetType().Name + Environment.NewLine);
+            RichTextBoxOne.AppendText("Полное имя типа локальной переменной, включая пространство имен: " + b.GetType().FullName + Environment.NewLine);
+            string name = b.GetType().AssemblyQualifiedName;
+            if (name != null) RichTextBoxOne.AppendText("Имя типа локальной переменной с указанием сборки, включающее имя сборки, из которой была загружена переменная: " + name);
+         }
          else
+         {
             RichTextBoxOne.AppendText("Преобразование завершилось неудачей" + Environment.NewLine);
-
-
+         }
+         
          int c = Convert.ToInt32(TextBoxOne.Text);
-
-         RichTextBoxOne.AppendText(b.GetType().Name + Environment.NewLine);
-         RichTextBoxOne.AppendText(b.GetType().FullName + Environment.NewLine);
-         string name = b.GetType().AssemblyQualifiedName;
-         if (name != null) RichTextBoxOne.AppendText(name);
-
          RichTextBoxOne.AppendText(c.GetType().Name + Environment.NewLine);
          RichTextBoxOne.AppendText(c.GetType().FullName + Environment.NewLine);
+         
+         RichTextBoxOne.ScrollToCaret();
       }
 
       private void ButtonParseTwo_Click(object sender, EventArgs e)
