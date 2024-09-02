@@ -20,9 +20,9 @@ namespace WindowsFormsParse
          bool result = int.TryParse(TextBoxOne.Text, out int anumber);
          RichTextBoxOne.AppendText("Метод int.TryParse" + Environment.NewLine);
          if (result)
-            RichTextBoxOne.AppendText(Environment.NewLine + "Преобразование прошло успешно. Выходное значение:" + anumber + Environment.NewLine);
+            RichTextBoxOne.AppendText("Преобразование прошло успешно. Выходное значение: " + anumber + Environment.NewLine);
          else
-            RichTextBoxOne.AppendText(Environment.NewLine + "Преобразование завершилось неудачей" + Environment.NewLine);
+            RichTextBoxOne.AppendText("Преобразование завершилось неудачей" + Environment.NewLine);
 
 
          int b = int.Parse(TextBoxOne.Text);
