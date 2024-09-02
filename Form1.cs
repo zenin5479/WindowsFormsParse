@@ -17,12 +17,16 @@ namespace WindowsFormsParse
 
       private void ButtonParseOne_Click(object sender, EventArgs e)
       {
-         bool isNumber = int.TryParse(TextBoxOne.Text, out int a);
-         RichTextBoxOne.AppendText(isNumber + Environment.NewLine + a + Environment.NewLine);
+         bool result = int.TryParse(TextBoxOne.Text, out int anumber);
+         RichTextBoxOne.AppendText("Метод int.TryParse" + Environment.NewLine);
+         if (result)
+            RichTextBoxOne.AppendText(Environment.NewLine + "Преобразование прошло успешно. Выходное значение:" + anumber + Environment.NewLine);
+         else
+            RichTextBoxOne.AppendText(Environment.NewLine + "Преобразование завершилось неудачей" + Environment.NewLine);
+
 
          int b = int.Parse(TextBoxOne.Text);
          int c = Convert.ToInt32(TextBoxOne.Text);
-
 
          RichTextBoxOne.AppendText(b.GetType().Name + Environment.NewLine);
          RichTextBoxOne.AppendText(b.GetType().FullName + Environment.NewLine);
