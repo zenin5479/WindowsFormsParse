@@ -17,25 +17,25 @@ namespace WindowsFormsParse
 
       private void ButtonParseOne_Click(object sender, EventArgs e)
       {
-         int a = int.Parse(TextBoxOne.Text);
-         int i = Convert.ToInt32(TextBoxOne.Text);
+         bool isNumber = int.TryParse(TextBoxOne.Text, out int a);
+         RichTextBoxOne.AppendText(isNumber + Environment.NewLine + a + Environment.NewLine);
+
+         int b = int.Parse(TextBoxOne.Text);
+         int c = Convert.ToInt32(TextBoxOne.Text);
 
 
-         RichTextBoxOne.AppendText(a.GetType().Name + Environment.NewLine);
-         RichTextBoxOne.AppendText(a.GetType().FullName + Environment.NewLine);
-         string name = a.GetType().AssemblyQualifiedName;
+         RichTextBoxOne.AppendText(b.GetType().Name + Environment.NewLine);
+         RichTextBoxOne.AppendText(b.GetType().FullName + Environment.NewLine);
+         string name = b.GetType().AssemblyQualifiedName;
          if (name != null) RichTextBoxOne.AppendText(name);
 
-         RichTextBoxOne.AppendText(i.GetType().Name + Environment.NewLine);
-         RichTextBoxOne.AppendText(i.GetType().FullName + Environment.NewLine);
+         RichTextBoxOne.AppendText(c.GetType().Name + Environment.NewLine);
+         RichTextBoxOne.AppendText(c.GetType().FullName + Environment.NewLine);
       }
 
       private void ButtonParseTwo_Click(object sender, EventArgs e)
       {
-         int outputvalue;
 
-         bool isNumber = int.TryParse(TextBoxOne.Text, out outputvalue);
-         RichTextBoxOne.AppendText(isNumber.ToString() + outputvalue);
       }
    }
 }
