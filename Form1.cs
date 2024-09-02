@@ -24,7 +24,6 @@ namespace WindowsFormsParse
          else
             RichTextBoxOne.AppendText("Преобразование завершилось неудачей" + Environment.NewLine);
 
-
          int b = int.Parse(TextBoxOne.Text);
          RichTextBoxOne.AppendText("Метод int.Parse" + Environment.NewLine);
          if (b != 0)
